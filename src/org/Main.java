@@ -13,12 +13,16 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception{
        this.stage = primaryStage;
 
-       primaryStage.setScene(new Scene(new HextechUI(), 400,600));
+       primaryStage.setScene(new Scene(new HextechUI(this), 400,600));
        primaryStage.setResizable(false);
        primaryStage.setTitle("Ping Hextech | Report JG");
        primaryStage.show();
     }
 
+
+    public Stage getStage() {
+        return stage;
+    }
 
     public static void main(String[] args) {
         launch(args);

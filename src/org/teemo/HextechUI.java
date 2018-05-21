@@ -1,6 +1,7 @@
 package org.teemo;
 
 import javafx.animation.ScaleTransition;
+import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.geometry.Pos;
 import javafx.scene.Cursor;
@@ -11,6 +12,7 @@ import javafx.scene.chart.XYChart;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
+import javafx.scene.control.Tooltip;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -36,11 +38,16 @@ public class HextechUI extends AnchorPane {
     private final VBox reportJG;
     private final PingLogic logic;
     private final HashMap<Server, XYChart.Series<String, Number>> data;
+    private final Button github;
 
     private boolean pentaPlaying = false;
+    private final Application application;
 
-    public HextechUI() {
+    public HextechUI(Application application) {
+        this.application = application;
 
+
+        github = new Button("!");
         data = new HashMap<>();
         topImage = new ImageView();
         tiltedTeemo = new ImageView();
@@ -76,8 +83,20 @@ public class HextechUI extends AnchorPane {
         getChildren().add(midLaneContainer);
         getChildren().add(lineChart);
 
+        Label disclaimer = new Label("This is not an app from Rito Games");
+        disclaimer.setFont(new Font(10));
+        disclaimer.setAlignment(Pos.CENTER);
+
         midLaneContainer.getChildren().add(reportJG);
         midLaneContainer.getChildren().add(tiltedTeemo);
+        midLaneContainer.getChildren().add(github);
+        midLaneContainer.getChildren().add(disclaimer);
+
+        Tooltip tooltip = new Tooltip("See this awesome app on github!");
+        github.setTooltip(tooltip);
+
+        AnchorPane.setBottomAnchor(disclaimer, 2.0);
+        AnchorPane.setLeftAnchor(disclaimer, 10.0);
 
         tiltedTeemo.setFitHeight(188);
         tiltedTeemo.setFitWidth(211);
@@ -85,6 +104,9 @@ public class HextechUI extends AnchorPane {
 
         serverChoice.setPrefWidth(200);
         serverChoice.getSelectionModel().selectFirst();
+
+        AnchorPane.setTopAnchor(github, 5.0);
+        AnchorPane.setLeftAnchor(github, 5.0);
 
         AnchorPane.setTopAnchor(reportJG, 0.0);
         AnchorPane.setLeftAnchor(reportJG, 0.0);
@@ -151,6 +173,10 @@ public class HextechUI extends AnchorPane {
 
         tiltedTeemo.setCursor(Cursor.HAND);
         topImage.setImage(timo);
+
+        github.setOnAction(event -> {
+            application.getHostServices().showDocument("https://d0tplist.github.io/pinghextech/");
+        });
 
     }
 
