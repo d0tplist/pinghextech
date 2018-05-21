@@ -1,6 +1,8 @@
 # pinghextech BETA
 
-*Note: to build this app you will need Java 10 and IntelliJ IDEA, not tested on Windows xp ~ 10 yet.
+For Mac and Windows
+
+*Note: to build this app you will need Java 10 and [IntelliJ IDEA][2], not tested on Windows xp ~ 10 yet.
 this app doesn't use thirtyparty libs and it's pure writen in Java 10, this app uses the "ping" command of your SO, SO don't worry about how it works.*
 
 #Spanish
@@ -9,7 +11,7 @@ Revisa tu conexión antes de arruinar la partida de tus amigos, escoje el mejor 
 
 *La diferencia entre el ping dentro de lol y la aplicación puede variar entre +-10ms*
 
-descargalo [aquí][1]
+descargalo [aquí][1] se ejecuta igual que el maincra.
 
 #English
 
@@ -26,6 +28,7 @@ My internet sucks, so that's my real ping right now :(
 ![alt text](https://github.com/d0tplist/pinghextech/blob/master/screenshot.png)
 
 [1]: https://github.com/d0tplist/pinghextech/releases
+[2]: https://www.jetbrains.com/idea/download/
 
 
 
@@ -37,3 +40,8 @@ TODO
 > * Implementar **Traceroute**
 > * Probar aplicación en Windows (EN)
 > * Agregar builds en .dmg y .exe
+> * Implementar escaneo de red
+
+```
+Send RP Sinty:LAN
+```
