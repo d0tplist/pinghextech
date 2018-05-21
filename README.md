@@ -1,11 +1,12 @@
 # pinghextech BETA
-
 For Mac and Windows
+
+![alt text](https://github.com/d0tplist/pinghextech/blob/master/dogeLogo.png)
 
 *Note: to build this app you will need Java 10 and [IntelliJ IDEA][2], not tested on Windows xp ~ 10 yet.
 this app doesn't use thirtyparty libs and it's pure writen in Java 10, this app uses the "ping" command of your SO, SO don't worry about how it works.*
 
-#Spanish
+## Spanish
 
 Revisa tu conexión antes de arruinar la partida de tus amigos, escoje el mejor servidor de lol por su ping, puedes revisar el ping de LOL sin necesidad de entrar a League Of Legends! rapido y seguro.
 
@@ -13,7 +14,7 @@ Revisa tu conexión antes de arruinar la partida de tus amigos, escoje el mejor 
 
 descargalo [aquí][1] se ejecuta igual que el maincra.
 
-#English
+## English
 
 (Definetly not Google Translate)
 
