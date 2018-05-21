@@ -6,13 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/teemo/HextechUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/teemo/HextechUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/teemo/api/WindowsPing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/teemo/api/WindowsPing.java" afterDir="false" />
-    </list>
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -405,8 +399,7 @@
     <option name="totallyTimeSpent" value="1302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="746" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1280" height="746" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
