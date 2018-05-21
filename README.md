@@ -41,6 +41,8 @@ TODO
 > * Probar aplicación en Windows (EN)
 > * Agregar builds en .dmg y .exe
 > * Implementar escaneo de red
+> * Agregar a los mancos de LAS
+> * Agregar a los flamers de BR
 
 ```
 Send RP Sinty:LAN
